@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+  <meta http-equiv="Strict-Transport-Security" content="max-age: 31536000; includeSubdomains; preload">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+
+  <meta http-equiv="cache-control" content="max-age=0" />
+
+  <meta http-equiv="expires" content="0" />
+
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+
+
+
+
+  <title> Random UUID Generator Tool | Testsigma </title>
+
+
+
+
+
+
+
+  <?php include('../common/header-include.php') ?>
+
+  <script>
+    function generateget(l){
+      var text = "";
+      var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+      for (var i = 0; i < l; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+      return text;
+    }
+    function generateword(){
+      let l = document.getElementById("pass_length").value;
+      document.getElementById("outputBox").value = generateget(l);
+    }
+
+  </script>
+
+
+</head>
+
+
+
+
+<body class="secondary_page">
+
+
+
+
+
+
+
+
+
+
+<!-- header start -->
+
+<?php include('../common/header.php') ?>
+
+<!-- header end -->
+
+
+
+
+
+
+
+<div class="container_common pt-70 mt-90">
+
+</div>
+
+<section class="bg_light journey_plan sec_padding mt-40">
+
+  <div class="container_common bg_light mb-20">
+
+    <div class="card_wrapper flex_column pl-30 pr-30">
+
+      <div class="mt-30 30 p_text sub_heading">Random Word Generator</div>
+      <div class="flex items-center"><h4 class="text-black">Characters length: </h4>
+        <select name="length" class="ml-20 rounded-lg bg-transparent border border-black" id="pass_length"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option></select></div>
+
+      <textarea id="outputBox" rows="5" class="mt-30 mb-30  p-10"></textarea>
+
+      <button class="btn gradient-button m-auto mb-30" onclick="generateword()">Generate Word</button>
+
+    </div>
+
+    <div class="mt-50 mb-30">
+
+      <div class="sub_heading">
+
+        What is Random Word Generator?
+
+      </div>
+
+      <p class="p_text mb-30">
+        LambdaTest’s free online Random Word Generator allows users to generate random word as per their requirements in no time. In the case of our random word generator, a random word is one that cannot be predicted because it is chosen at random from the database of words in our generator.
+
+
+
+      </p>
+
+      <div class="sub_heading">
+
+        How does the Random Word Generator work?
+
+      </div>
+
+      <p class="p_text">
+        LambdaTest’s free online Random Word Generator is super easy to use! All you need to do is define the character length and click on “Generate Sentence”. You will be presented with a random words as per your specified requirements.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+<?php include('../common/footer-banner.php') ?>
+
+
+
+
+<?php include('../common/footer.php') ?>
+
+
+
+
+<?php include('../common/footer-include.php') ?>
+
+
+
+
+</body>
+
+</html>
+
+

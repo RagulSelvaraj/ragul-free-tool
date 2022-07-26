@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+  <meta http-equiv="Strict-Transport-Security" content="max-age: 31536000; includeSubdomains; preload">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+
+  <meta http-equiv="cache-control" content="max-age=0" />
+
+  <meta http-equiv="expires" content="0" />
+
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+
+  <meta http-equiv="pragma" content="no-cache" />
+
+
+
+
+  <title> Random UUID Generator Tool | Testsigma </title>
+
+
+
+
+
+
+
+  <?php include('../common/header-include.php') ?>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+  <script>
+    function uppercase(){
+      let word = document.getElementById("outputBox").value;
+      document.getElementById("Decoder").value=word.toUpperCase();
+    }
+
+
+  </script>
+
+</head>
+
+
+
+
+<body class="secondary_page">
+
+
+
+
+
+
+
+
+
+
+<!-- header start -->
+
+<?php include('../common/header.php') ?>
+
+<!-- header end -->
+
+
+
+
+
+
+
+<div class="container_common pt-70 mt-90">
+
+
+
+
+</div>
+
+<section class="bg_light journey_plan sec_padding mt-40">
+
+  <div class="container_common bg_light mb-20">
+
+    <div class="card_wrapper flex_column pl-30 pr-30">
+
+      <div class="mt-30 30 p_text sub_heading">Input</div>
+
+      <textarea id="outputBox" rows="5" class="mt-30 mb-30  p-10"></textarea>
+
+      <button class="btn gradient-button m-auto mb-30" onclick="uppercase()">Convert Uppercase Text</button>
+      <h4 class="text-size-18 font-medium mb-18">Output</h4>
+      <input type="text" class="w-full border border-black p-10" id="Decoder">
+
+    </div>
+
+    <div class="mt-50 mb-30">
+
+      <div class="sub_heading">
+
+        What is Text Uppercase Online?
+
+      </div>
+
+      <p class="p_text mb-30">
+
+        The uppercase text tool, available below, allows you to change all the lowercase letters to a capital letters. Simply copy and paste the text into the text area below and click the button. You'll get all your text just as it was, except it'll be in uppercase.
+
+
+
+      </p>
+
+      <div class="sub_heading">
+        How does Text Uppercase Online work?
+
+      </div>
+
+      <p class="p_text">
+
+        Text uppercase converter helps to convert any string of text into uppercase. It passes the string and changes the lower text letters into uppercase. THIS TEXT IS AN EXAMPLE OF UPPERCASE OUTPUT.
+
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+<?php include('../common/footer-banner.php') ?>
+
+
+
+
+<?php include('../common/footer.php') ?>
+
+
+
+
+<?php include('../common/footer-include.php') ?>
+
+
+
+
+</body>
+
+</html>
+
